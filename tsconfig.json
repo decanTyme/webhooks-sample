@@ -1,0 +1,23 @@
+{
+  "extends": "@tsconfig/node-lts",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@services/*": ["services/*"],
+      "@routes/*": ["routes/*"],
+      "@controllers/*": ["controllers/*"],
+      "@utils": ["utils"],
+      "@constants": ["constants"],
+      "@config": ["../config"],
+      "@types": ["types"]
+    },
+
+    "lib": ["ESNext"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "outDir": "dist"
+  },
+  "exclude": ["dist"]
+}
